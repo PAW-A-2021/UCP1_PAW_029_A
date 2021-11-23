@@ -13,13 +13,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.NamaCustomer)
+                @Html.DisplayName("NamaCustomer")
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NomorTelepon)
+                @Html.DisplayName("NomorTelepon")
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Alamat)
+                @Html.DisplayName("Alamat")
             </th>
             <th></th>
         </tr>
@@ -37,9 +37,9 @@
                 @Html.DisplayFor(modelItem => item.Alamat)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCustomer">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCustomer">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCustomer">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdCustomer"><i class="fas fa-marker fa-lg"></i></a> |
+                <a asp-action="Details" asp-route-id="@item.IdCustomer"><i class="fas fa-marker fa-lg"></i></a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCustomer"><i class="fas fa-marker fa-lg"></i></a>
             </td>
         </tr>
 }

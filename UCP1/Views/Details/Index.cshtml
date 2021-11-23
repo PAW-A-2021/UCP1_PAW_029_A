@@ -13,19 +13,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.NomorResiPengiriman)
+                @Html.DisplayName("NomorResiPengiriman")
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdAdministratorNavigation)
+                @Html.DisplayName("IdAdministratorNavigation")
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdCustomerNavigation)
+                @Html.DisplayName("IdCustomerNavigation")
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdDetailBarangNavigation)
+                @Html.DisplayName("IdDetailBarangNavigation")
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdKurirNavigation)
+                @Html.DisplayName("IdKurirNavigation")
             </th>
             <th></th>
         </tr>
@@ -49,9 +49,9 @@
                 @Html.DisplayFor(modelItem => item.IdKurirNavigation.IdKurir)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdDetailBarang">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdDetailBarang">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdDetailBarang">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdDetailBarang"><i class="fas fa-marker fa-lg"></i></a> |
+                <a asp-action="Details" asp-route-id="@item.IdDetailBarang"><i class="fas fa-marker fa-lg"></i></a> |
+                <a asp-action="Delete" asp-route-id="@item.IdDetailBarang"><i class="fas fa-marker fa-lg"></i></a>
             </td>
         </tr>
 }
